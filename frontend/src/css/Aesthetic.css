@@ -1,0 +1,56 @@
+.aesthetic-dress {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    background-color: #222; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dress-poster {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.dress-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dress-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.dress-info {
+    text-align: center;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #222; 
+    color: white;
+}
+
+.dress-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dress-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
