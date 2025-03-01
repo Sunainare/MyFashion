@@ -5,6 +5,7 @@ import grungeImg from '../assets/grunge.jpg';
 import vscoImg from '../assets/vsco.jpg';
 import cottageCoreImg from '../assets/cottage-core.jpg';
 import baddieImg from '../assets/baddie.jpg';
+import UploadImage from '../contexts/uploadImage'
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -46,13 +47,15 @@ function Home() {
                 <button type="submit" className="search-button">Search</button>
             </form>
 
-            {/* Category Block */}
+            <UploadImage/>
+
+            {/* Category Block
             <div className="dresses-category-block">
                 <div className="category">Grunge</div>
                 <div className="category">VSCO</div>
                 <div className="category">Cottage Core</div>
                 <div className="category">Baddie</div>
-            </div>
+            </div> */}
 
             {error ? (
                 <p>{error}</p>
